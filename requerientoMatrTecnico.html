@@ -1,0 +1,141 @@
+<meta charset="UTF-8" />
+<style>
+  .page {
+    width: 205mm;
+    height: 281mm;
+    margin: auto;
+    font-family: 'Times New Roman', Times, serif;
+    display: block;
+    text-align: center;
+  }
+  .pageContent {
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    display: block;
+    text-align: left;
+  }
+  .pagaTitle {
+    font-weight: bold;
+    text-align: center;
+    margin: 50px auto 25px;
+    font-size: 18px;
+  }
+  .pageSempleTexts {
+    text-align: justify;
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .returnBd {
+    background-color: yellow;
+  }
+  .pageListOfDocuments {
+    width: 93%;
+    margin: 0 auto 50px;
+    border: 1px solid #000;
+    padding: 5px 45px 20px 6px;
+  }
+  .pageListOfDocuments p {
+    font-size: 13px;
+    line-height: 16px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .pagePlaceDate {
+    text-align: end;
+  }
+</style>
+<div class="page">
+  <div class="pageContent">
+    <p class="pagaTitle">Requerimento de Matrícula – Técnico</p>
+    <p class="pageSempleTexts">
+      Eu, <b><span class="returnBd">|strNome|</span></b
+      >, portador do RG: <b><span class="returnBd">|strRG|</span></b
+      >, CPF: <b><span class="returnBd">|strCPF|</span></b
+      >, nascido em <b><span class="returnBd">|dtmNascimento|</span></b
+      >, <b>venho requerer </b> matricular-me no curso de
+      <b><span class="returnBd">|strCursoMaster|</span></b> para frequentar as
+      aulas da cidade de BA - Caetité, Situado na Travessa Contorno II, 170 –
+      São José – CEP 46.400-000.
+    </p>
+    <p class="pageSempleTexts">
+      Para tanto, junto os documentos necessários e declaro estar nesse momento
+      ciente e de acordo com as normas regimentares do(a)
+      <b
+        >ESCOLA DE ENSINO FUNDAMENTAL, MEDIO E TECNICO DIMENSAO LTDA (CENTRO DE
+        EDUCACAO PROFISSIONAL DIMENSAO - CEPED).</b
+      >.
+    </p>
+    <p class="pageSempleTexts">
+      Declaro estar CIENTE que o valor de minha(s) parcela(s) do curso de
+      <b><span class="returnBd">|strCursoMaster|</span></b> é de R$<span
+        class="returnBd"
+        >|strValorParcelaAluno|</span
+      >, que a carga horária total do meu curso é de <b>1200 </b>Horas,
+      divididos em disciplinas mensais e que meu último pagamento será a parcela
+      de número (18) com vencimento em
+      <b><span class="returnBd">|strDataUltimaParcela|</span></b>
+    </p>
+    <p class="pageSempleTexts">
+      <b>Filiação:</b><br />Mãe: <br />Pai: <br />Endereço: <br />Caetité - BA,
+      CEP: 46.400-000; <br />Logradouro:
+      <span class="returnBd"
+        >|strEndereco|, |strNumero|, |strBairro|, |strCidade|-|strEstado|</span
+      ><br /><b>Informações sobre a matrícula:</b><br />Código Vinculado:
+      BolsaTec23006 <br />Curso: <span class="returnBd">|strCursoMaster|</span>
+      <br />Turma: <span class="returnBd">|strTurmaOuPacote|</span
+      ><br />Horário: 19:00:00-22:00:00
+    </p>
+    <p class="pageSempleTexts">
+      Eu, <span class="returnBd">|strNome|</span>, também declaro ciência que a
+      entrega de todos os documentos abaixo relacionados deve ocorrer no ato da
+      matrícula e que prorrogações de prazos é liberdade da Instituição que
+      poderá cancelar minha matrícula a qualquer tempo quando extrapolados
+      prazos previstos no Contrato de Prestação de Serviços Educacionais e
+      comprovada irregularidade em quaisquer documentos obrigatórios para
+      efetivação de matrícula, sem o direito a ressarcimento de quaisquer
+      valores.
+    </p>
+    <p class="pageSempleTexts" style="margin-bottom: 0">
+      <b>Protocolo de Entrega de Documentos</b>
+    </p>
+    <div class="pageListOfDocuments">
+      <p>
+        <span>Foto 3x4 Colorida e Recente</span
+        ><span>[ ] - Entregue [ ] - Pendente</span>
+      </p>
+      <p>
+        <span>Fotocópia do CPF </span><span>[ ] - Entregue [ ] - Pendente</span>
+      </p>
+      <p>
+        <span>Fotocópia do Comprovante de Residência </span
+        ><span>[ ] - Entregue [ ] - Pendente</span>
+      </p>
+      <p>
+        <span>Cópia autenticada do Histórico Escolar do Ensino Médio </span
+        ><span>[ ] - Entregue [ ] - Pendente</span>
+      </p>
+      <p>
+        <span
+          >Cópia autenticada do Certificado de conclusão do Ensino Médio ou
+          Declaração de cursando </span
+        ><span>[ ] - Entregue [ ] - Pendente</span>
+      </p>
+      <p>
+        <span>Certidão Civil (Casamento ou Nascimento) </span
+        ><span> [ ] - Entregue [ ] – Pendente</span>
+      </p>
+    </div>
+    <p class="pageSempleTexts">Nestes termos, pede deferimento.</p>
+    <p class="pageSempleTexts">
+      _____________________________________________ <br /><span class="returnBd"
+        >|strNome|</span
+      ><br /><b><span class="returnBd">|strCPF|</span></b>
+    </p>
+    <p class="pagePlaceDate">
+      Caetité, BA, <span class="returnBd">|dataDiaMesAno|</span>
+    </p>
+  </div>
+</div>
