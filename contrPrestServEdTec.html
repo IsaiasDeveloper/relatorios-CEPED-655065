@@ -1,756 +1,769 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <style>
-      .pages {
-        width: 205mm;
-        margin: auto;
-        display: block;
-        text-align: center;
-        font-family: Arial, Helvetica, sans-serif;
-        page-break-before: always;
+<meta charset="UTF-8" />
+<style>
+  .pages {
+    width: 205mm;
+    margin: auto;
+    display: block;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    page-break-before: always;
 
-        border: 1px solid #000;
-      }
-      .pages * {
-        margin: 0;
-      }
-      .pagesContent {
-        width: 97%;
-        margin: 0 auto;
-        display: block;
+    /* border: 1px solid #000; */
+  }
+  .pages * {
+    margin: 0;
+  }
+  .pagesContent {
+    width: 97%;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+  }
+  .pagesTitle {
+    text-align: center;
+    font-size: 13px;
+    text-decoration: underline;
+    font-weight: bold;
+    margin: 15px auto 10px;
+  }
+  .returnBd {
+    background-color: yellow;
+  }
+  .pagesSempleTexts {
+    font-size: 12px;
+    text-align: justify;
+    line-height: 14px;
+  }
+  table {
+    width: 100%;
+    border: 1px solid #000;
+    border-collapse: collapse;
+    font-size: 11px;
+  }
+  tr,
+  td {
+    border: 1px solid #000;
+  }
+  .pagesSubTitle {
+    text-align: justify;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  .pagesStudentInfoBox {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    border: 1px solid #000;
+    border-bottom: none;
+    margin-bottom: 2px;
+  }
+  .pagesStudentInfoBox p {
+    font-size: 11px;
+    text-align: left;
+  }
+  .pagesStudentInfoLine {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border-bottom: 1px solid;
+  }
+  .pagesStudentColumns:not(:first-child) {
+    border-left: 1px solid;
+  }
+  .pagesStudentColumns p {
+    padding: 0 0 2px 5px;
+    line-height: 12px;
+  }
+  .pagesSignatures {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-top: 8px;
+  }
+  .pagesSignatures p {
+    text-align: justify;
+    font-size: 11px;
+    line-height: 14px;
+  }
+  .pagesWitnesses {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 8px;
+  }
+  .pagesWitnesses p {
+    font-size: 11px;
+  }
+  .pagesWitnesses span {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+  }
+  .pagesWitnesses span p {
+    width: 50%;
+    text-align: start;
+  }
+</style>
+<!-- Page one  -->
+<div class="pages">
+  <div class="pagesContent">
+    <p class="pagesTitle">
+      CONTRATO DE PRESTAÇÃO DE SERVIÇOS EDUCACIONAIS CURSOS TÉCNICOS 2020
+    </p>
+    <p class="pagesSempleTexts">
+      Pelo presente instrumento particular de CONTRATO DE PRESTAÇÃO DE SERVIÇOS
+      EDUCACIONAIS, de um lado a
+      <b
+        >ESCOLA DE ENSINO FUNDAMENTAL, MEDIO E TECNICO DIMENSAO LTDA (CENTRO DE
+        EDUCACAO PROFISSIONAL DIMENSAO - CEPED)</b
+      >), pessoa jurídica de direito privado, com sede na Travessa Contorno, 170
+      - Frente: no Estado da Bahia, inscrito no CNPJ sob o n.º
+      02.528.577/0001-04, neste ato representada por sua Representante legal
+      Tamires Rodrigues da Silva Guedes, brasileira, empresária, CPF nº
+      060.146.965-80, residente e domiciliada na Travessa São Miguel, n. 36,
+      bairro Santa Rita , Cidade de Caetité, no Estado da Bahia; denominado como
+      CONTRATANTE o aluno ou responsável legal:
+    </p>
+    <table style="line-height: 13px">
+      <tbody>
+        <tr style="text-align: left">
+          <td style="margin-left: 5px">
+            Aluno: <b><span class="returnBd">|strNome|</span></b>
+          </td>
+          <td style="width: 20%; margin-left: 5px">Código:</td>
+          <td style="width: 20%; margin-left: 5px">Fase:</td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="pagesSubTitle">Qualificação do Contratante ou responsável</p>
+    <div class="pagesStudentInfoBox">
+      <div class="pagesStudentInfoLine">
+        <div class="pagesStudentColumns">
+          <p>
+            Nome completo:
+            <b><span class="returnBd">|strNomeResponsavel|</span></b>
+          </p>
+        </div>
+      </div>
+      <div class="pagesStudentInfoLine">
+        <div class="pagesStudentColumns" style="width: 250px">
+          <p>CPF: <span class="returnBd">|strCpfResponsavel|</span></p>
+        </div>
+        <div class="pagesStudentColumns" style="width: 250px">
+          <p>RG: <span class="returnBd">|strRgResponsavel|</span></p>
+        </div>
+        <div class="pagesStudentColumns" style="width: 250px">
+          <p>
+            Data de nascimento:
+            <span class="returnBd">|dtmNascimento|</span>
+          </p>
+        </div>
+      </div>
+      <div class="pagesStudentInfoLine">
+        <div class="pagesStudentColumns" style="width: 65px">
+          <p>Endereço</p>
+        </div>
+        <div class="pagesStudentColumns" style="width: 445px">
+          <p>Rua: <span class="returnBd">|strEndereco|</span></p>
+        </div>
+        <div class="pagesStudentColumns" style="width: 100px">
+          <p>Nº <span class="returnBd">|strNumero|</span></p>
+        </div>
+        <div class="pagesStudentColumns" style="width: 120px">
+          <p>CEP: <span class="returnBd">|strCepAluno|</span></p>
+        </div>
+      </div>
+      <div class="pagesStudentInfoLine">
+        <div class="pagesStudentColumns" style="width: 250px">
+          <p>Complemento: <span class="returnBd">|strComplemento|</span></p>
+        </div>
+        <div class="pagesStudentColumns" style="width: 250px">
+          <p>
+            Bairro:
+            <span class="returnBd">|strBairro|</span>
+          </p>
+        </div>
+        <div class="pagesStudentColumns" style="width: 250px">
+          <p>Cidade: <span class="returnBd">|strCidade|</span></p>
+        </div>
+      </div>
+      <div class="pagesStudentInfoLine">
+        <div class="pagesStudentColumns" style="width: 8%">
+          <p>Telefones</p>
+        </div>
+        <div class="pagesStudentColumns" style="width: 16%">
+          <p>Res.:</p>
+        </div>
+        <div class="pagesStudentColumns" style="width: 16%">
+          <p>Com.:</p>
+        </div>
+        <div class="pagesStudentColumns" style="width: 225px">
+          <p>
+            Cel1.:
+            <span class="returnBd">|strCelularResponsavel|</span>
+          </p>
+        </div>
+
+        <div class="pagesStudentColumns" style="width: 220px">
+          <p>Cel2: <span class="returnBd">|strTelefoneAluno|</span></p>
+        </div>
+      </div>
+      <div class="pagesStudentInfoLine">
+        <div class="pagesStudentColumns" style="width: 520px">
+          <p>E-mail: <span class="returnBd">|strEmailResponsavel|</span></p>
+        </div>
+        <div class="pagesStudentColumns" style="width: 230px">
+          <p>
+            Parentesco:
+            <span class="returnBd">|strParentescoResponsavel|</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <p class="pagesSempleTexts">têm justo e contratado o seguinte:</p>
+    <p class="pagesSempleTexts"><b>CLÁUSULA PRIMEIRA – DO OBJETO</b></p>
+    <p class="pagesSempleTexts">
+      O presente contrato tem por objetivo a prestação de serviços educacionais
+      ao CONTRATANTE, que frequentará o curso técnico para o qual se matriculou,
+      de acordo com Projeto Pedagógico do Curso.
+    </p>
+    <p class="pagesSempleTexts"><b>CLÁUSULA SEGUNDA – DA MATRÍCULA</b></p>
+    <p class="pagesSempleTexts">
+      Como este contrato rege as relações entre as partes até a sua rescisão
+      unilateral ou pela integralização da matriz curricular, o aluno a cada
+      semestre letivo, deverá efetuar a confirmação de matrícula nos prazos e
+      condições estabelecidas em edital.
+    </p>
+    <p class="pagesSempleTexts">
+      1. A matrícula de cada semestre letivo se formalizará e aperfeiçoará pelo
+      cumprimento dos seguintes procedimentos: <br />I – Para o aluno
+      ingressante: <br />
+      a) Entrega do Requerimento de Matrícula e deste contrato, ambos
+      devidamente preenchidos e assinados, na Secretaria Acadêmica; <br />
+
+      a) Pela comprovação do pagamento da primeira parcela da semestralidade;
+      <br />
+
+      b) Entrega dos documentos previstos no Edital de matrícula. <br />II –
+      Para o aluno veterano: <br />a) ACEITE aos termos do contrato de prestação
+      de serviços educacionais por meio de aceite eletrônico (Login e senha)
+      diretamente no site da CONTRATADA e escolha das disciplinas a serem
+      cursadas, procedimento este que será considerado válido e aceito para
+      todos os efeitos jurídicos e legais vinculados ao cumprimento do presente
+      contrato. <br />b) Pela comprovação do pagamento da primeira parcela da
+      semestralidade na data estipulada em edital e neste contrato; <br />2. Os
+      procedimentos acima referidos configuram-se como condições suspensivas
+      para o início da vigência deste pacto, nos termos dos artigos 125 e 332 do
+      Código Civil. <br />3. Fica o CONTRATANTE ciente de que as cláusulas
+      contratuais ora avençadas estão disponibilizadas no site da contratada e
+      publicadas no mural da Secretaria Acadêmica e Tesouraria do CEPED.
+      <br />4. A CONTRATADA não se responsabiliza pela vaga quando a matrícula
+      não for efetuada na data prefixada ou na falta de documentação hábil, ou
+      situação de inadimplência do CONTRATANTE. <br />5. Caso seja efetuada
+      matrícula a destempo, serão feitos os pagamentos das parcelas vencidas, no
+      ato da matrícula. <br />6. A renovação de matrícula realizada fora do
+      prazo, quando aceita pela instituição pela existência de vagas, seguirão
+      os procedimentos descritos nas alíneas “a” e “b” do item I do desta
+      cláusula. <br />7. Não é permitido ao aluno frequentar as aulas sem a
+      devida matrícula. Caso isso venha acontecer sem o conhecimento e permissão
+      da CONTRATADA, o CONTRATANTE não terá direito ao aproveitamento da
+      disciplina e nem a qualquer ato escolar, não podendo realizar avaliações e
+      demais atos. <br />8. Os alunos com deficiência ou necessidades educativas
+      especiais deverão declarar esta condição de forma expressa no momento da
+      matrícula, inclusive com laudo médico ou informações complementares, caso
+      se faça necessário.
+    </p>
+    <p class="pagesSempleTexts">
+      <b>CLÁUSULA TERCEIRA – DO INVESTIMENTO E DA FORMA DE PAGAMENTO</b>
+    </p>
+    <p class="pagesSempleTexts">
+      Com base na Resolução aprovada pela mantenedora e vigente para o ano de
+      2023, para obtenção do valor a ser pago mensalmente pelo CONTRATANTE, o
+      total de créditos das disciplinas selecionadas no ato da Matrícula
+      individual deverá ser multiplicado pelo valor semestral de um crédito
+    </p>
+    <table
+      style="
         text-align: center;
-      }
-      .pagesTitle {
-        text-align: center;
-        font-size: 12px;
-        text-decoration: underline;
-        font-weight: bold;
-        margin: 5px auto;
-      }
-      .returnBd {
-        background-color: yellow;
-      }
-      .pagesSempleTexts {
-        font-size: 11px;
-        text-align: justify;
-        line-height: 11px;
-      }
-      table {
-        width: 100%;
-        border: 1px solid #000;
-        border-collapse: collapse;
-        font-size: 11px;
-      }
-      tr,
-      td {
-        border: 1px solid #000;
-      }
-      .pagesSubTitle {
-        text-align: justify;
-        font-size: 12px;
-        font-weight: bold;
-      }
-      .pagesStudentInfoBox {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
-        align-items: start;
-        border: 1px solid #000;
-        border-bottom: none;
+        font-size: 10px;
         margin-bottom: 2px;
-      }
-      .pagesStudentInfoBox p {
-        font-size: 11px;
-        text-align: left;
-      }
-      .pagesStudentInfoLine {
-        width: 100%;
-        display: flex;
-        justify-content: start;
-        align-items: center;
-        border-bottom: 1px solid;
-      }
-      .pagesStudentColumns:not(:first-child) {
-        border-left: 1px solid;
-      }
-      .pagesStudentColumns p {
-        padding: 0 0 2px 5px;
-        line-height: 12px;
-      }
-    </style>
-  </head>
-  <body>
-    <!-- Page one  -->
-    <div class="pages">
-      <div class="pagesContent">
-        <p class="pagesTitle">
-          CONTRATO DE PRESTAÇÃO DE SERVIÇOS EDUCACIONAIS CURSOS TÉCNICOS 2020
-        </p>
-        <p class="pagesSempleTexts">
-          Pelo presente instrumento particular de CONTRATO DE PRESTAÇÃO DE
-          SERVIÇOS EDUCACIONAIS, de um lado a
-          <b
-            >ESCOLA DE ENSINO FUNDAMENTAL, MEDIO E TECNICO DIMENSAO LTDA (CENTRO
-            DE EDUCACAO PROFISSIONAL DIMENSAO - CEPED)</b
-          >), pessoa jurídica de direito privado, com sede na Travessa Contorno,
-          170 - Frente: no Estado da Bahia, inscrito no CNPJ sob o n.º
-          02.528.577/0001-04, neste ato representada por sua Representante legal
-          Tamires Rodrigues da Silva Guedes, brasileira, empresária, CPF nº
-          060.146.965-80, residente e domiciliada na Travessa São Miguel, n. 36,
-          bairro Santa Rita , Cidade de Caetité, no Estado da Bahia; denominado
-          como CONTRATANTE o aluno ou responsável legal:
-        </p>
-        <table>
-          <tbody>
-            <tr style="text-align: left">
-              <td style="margin-left: 5px">
-                Aluno: <b><span class="returnBd">|strNome|</span></b>
-              </td>
-              <td style="width: 20%; margin-left: 5px">Código:</td>
-              <td style="width: 20%; margin-left: 5px">Fase:</td>
-            </tr>
-          </tbody>
-        </table>
-        <p class="pagesSubTitle">Qualificação do Contratante ou responsável</p>
-        <div class="pagesStudentInfoBox">
-          <div class="pagesStudentInfoLine">
-            <div class="pagesStudentColumns">
-              <p>
-                Nome completo:
-                <b><span class="returnBd">|strNomeResponsavel|</span></b>
-              </p>
-            </div>
-          </div>
-          <div class="pagesStudentInfoLine">
-            <div class="pagesStudentColumns" style="width: 250px">
-              <p>CPF: <span class="returnBd">|strCpfResponsavel|</span></p>
-            </div>
-            <div class="pagesStudentColumns" style="width: 250px">
-              <p>RG: <span class="returnBd">|strRgResponsavel|</span></p>
-            </div>
-            <div class="pagesStudentColumns" style="width: 250px">
-              <p>
-                Data de nascimento:
-                <span class="returnBd">|dtmNascimento|</span>
-              </p>
-            </div>
-          </div>
-          <div class="pagesStudentInfoLine">
-            <div class="pagesStudentColumns" style="width: 65px">
-              <p>Endereço</p>
-            </div>
-            <div class="pagesStudentColumns" style="width: 445px">
-              <p>Rua: <span class="returnBd">|strEndereco|</span></p>
-            </div>
-            <div class="pagesStudentColumns" style="width: 100px">
-              <p>Nº <span class="returnBd">|strNumero|</span></p>
-            </div>
-            <div class="pagesStudentColumns" style="width: 120px">
-              <p>CEP: <span class="returnBd">|strCepAluno|</span></p>
-            </div>
-          </div>
-          <div class="pagesStudentInfoLine">
-            <div class="pagesStudentColumns" style="width: 250px">
-              <p>Complemento: <span class="returnBd">|strComplemento|</span></p>
-            </div>
-            <div class="pagesStudentColumns" style="width: 250px">
-              <p>
-                Bairro:
-                <span class="returnBd">|strBairro|</span>
-              </p>
-            </div>
-            <div class="pagesStudentColumns" style="width: 250px">
-              <p>Cidade: <span class="returnBd">|strCidade|</span></p>
-            </div>
-          </div>
-          <div class="pagesStudentInfoLine">
-            <div class="pagesStudentColumns" style="width: 8%">
-              <p>Telefones</p>
-            </div>
-            <div class="pagesStudentColumns" style="width: 16%">
-              <p>Res.:</p>
-            </div>
-            <div class="pagesStudentColumns" style="width: 16%">
-              <p>Com.:</p>
-            </div>
-            <div class="pagesStudentColumns" style="width: 225px">
-              <p>
-                Cel1.:
-                <span class="returnBd">|strCelularResponsavel|</span>
-              </p>
-            </div>
-
-            <div class="pagesStudentColumns" style="width: 220px">
-              <p>Cel2: <span class="returnBd">|strTelefoneAluno|</span></p>
-            </div>
-          </div>
-          <div class="pagesStudentInfoLine">
-            <div class="pagesStudentColumns" style="width: 520px">
-              <p>E-mail: <span class="returnBd">|strEmailResponsavel|</span></p>
-            </div>
-            <div class="pagesStudentColumns" style="width: 230px">
-              <p>
-                Parentesco:
-                <span class="returnBd">|strParentescoResponsavel|</span>
-              </p>
-            </div>
-          </div>
-        </div>
-        <p class="pagesSempleTexts">têm justo e contratado o seguinte:</p>
-        <p class="pagesSempleTexts"><b>CLÁUSULA PRIMEIRA – DO OBJETO</b></p>
-        <p class="pagesSempleTexts">
-          O presente contrato tem por objetivo a prestação de serviços
-          educacionais ao CONTRATANTE, que frequentará o curso técnico para o
-          qual se matriculou, de acordo com Projeto Pedagógico do Curso.
-        </p>
-        <p class="pagesSempleTexts"><b>CLÁUSULA SEGUNDA – DA MATRÍCULA</b></p>
-        <p class="pagesSempleTexts">
-          Como este contrato rege as relações entre as partes até a sua rescisão
-          unilateral ou pela integralização da matriz curricular, o aluno a cada
-          semestre letivo, deverá efetuar a confirmação de matrícula nos prazos
-          e condições estabelecidas em edital.
-        </p>
-        <p class="pagesSempleTexts">
-          1. A matrícula de cada semestre letivo se formalizará e aperfeiçoará
-          pelo cumprimento dos seguintes procedimentos: <br />I – Para o aluno
-          ingressante: <br />
-          a) Entrega do Requerimento de Matrícula e deste contrato, ambos
-          devidamente preenchidos e assinados, na Secretaria Acadêmica; <br />
-
-          a) Pela comprovação do pagamento da primeira parcela da
-          semestralidade; <br />
-
-          b) Entrega dos documentos previstos no Edital de matrícula. <br />II –
-          Para o aluno veterano: <br />a) ACEITE aos termos do contrato de
-          prestação de serviços educacionais por meio de aceite eletrônico
-          (Login e senha) diretamente no site da CONTRATADA e escolha das
-          disciplinas a serem cursadas, procedimento este que será considerado
-          válido e aceito para todos os efeitos jurídicos e legais vinculados ao
-          cumprimento do presente contrato. <br />b) Pela comprovação do
-          pagamento da primeira parcela da semestralidade na data estipulada em
-          edital e neste contrato; <br />2. Os procedimentos acima referidos
-          configuram-se como condições suspensivas para o início da vigência
-          deste pacto, nos termos dos artigos 125 e 332 do Código Civil.
-          <br />3. Fica o CONTRATANTE ciente de que as cláusulas contratuais ora
-          avençadas estão disponibilizadas no site da contratada e publicadas no
-          mural da Secretaria Acadêmica e Tesouraria do CEPED. <br />4. A
-          CONTRATADA não se responsabiliza pela vaga quando a matrícula não for
-          efetuada na data prefixada ou na falta de documentação hábil, ou
-          situação de inadimplência do CONTRATANTE. <br />5. Caso seja efetuada
-          matrícula a destempo, serão feitos os pagamentos das parcelas
-          vencidas, no ato da matrícula. <br />6. A renovação de matrícula
-          realizada fora do prazo, quando aceita pela instituição pela
-          existência de vagas, seguirão os procedimentos descritos nas alíneas
-          “a” e “b” do item I do desta cláusula. <br />7. Não é permitido ao
-          aluno frequentar as aulas sem a devida matrícula. Caso isso venha
-          acontecer sem o conhecimento e permissão da CONTRATADA, o CONTRATANTE
-          não terá direito ao aproveitamento da disciplina e nem a qualquer ato
-          escolar, não podendo realizar avaliações e demais atos. <br />8. Os
-          alunos com deficiência ou necessidades educativas especiais deverão
-          declarar esta condição de forma expressa no momento da matrícula,
-          inclusive com laudo médico ou informações complementares, caso se faça
-          necessário.
-        </p>
-        <p class="pagesSempleTexts">
-          <b>CLÁUSULA TERCEIRA – DO INVESTIMENTO E DA FORMA DE PAGAMENTO</b>
-        </p>
-        <p class="pagesSempleTexts">
-          Com base na Resolução aprovada pela mantenedora e vigente para o ano
-          de 2023, para obtenção do valor a ser pago mensalmente pelo
-          CONTRATANTE, o total de créditos das disciplinas selecionadas no ato
-          da Matrícula individual deverá ser multiplicado pelo valor semestral
-          de um crédito
-        </p>
-        <table
-          style="
-            text-align: center;
-            font-size: 10px;
-            margin-bottom: 2px;
-            margin-top: 2px;
-            line-height: 9px;
-          "
-        >
-          <tbody>
-            <tr>
-              <td><b>OPÇÃO</b></td>
-              <td><b>CURSOS</b></td>
-              <td>
-                <b>CARGA HORÁRIA <br />DO CURSO</b>
-              </td>
-              <td>
-                <b>QUANTIDADE E VALOR DA <br />PARCELA MENSAL / 2023</b>
-              </td>
-              <td>
-                <b>BOLSA DE ESTUDOS (DESCONTOS) <br />CONCEDIDO</b>
-              </td>
-            </tr>
-            <tr>
-              <td>001</td>
-              <td style="text-align: left; padding-left: 5px">
-                TÉCNICO EM SEGURANÇA DO TRABALHO
-              </td>
-              <td>1200h</td>
-              <td>18 X R$ 350,00</td>
-              <td>( ) 70% ( ) 50% ( ) 30%</td>
-            </tr>
-            <tr>
-              <td>002</td>
-              <td style="text-align: left; padding-left: 5px">
-                TÉCNICO EM ELETROTÉCNICA
-              </td>
-              <td>1200h</td>
-              <td>18 X R$ 350,00</td>
-              <td>( ) 70% ( ) 50% ( ) 30%</td>
-            </tr>
-            <tr>
-              <td>003</td>
-              <td style="text-align: left; padding-left: 5px">
-                TÉCNICO EM ENFERMAGEM
-              </td>
-              <td>1800h</td>
-              <td>21 X R$ 400,00</td>
-              <td>( ) 70% ( ) 50% ( ) 30%</td>
-            </tr>
-            <tr>
-              <td>004</td>
-              <td style="text-align: left; padding-left: 5px">
-                TÉCNICO EM MEIO AMBIENTE
-              </td>
-              <td>1200h</td>
-              <td>18 X R$ 350,00</td>
-              <td>( ) 70% ( ) 50% ( ) 30%</td>
-            </tr>
-            <tr>
-              <td>005</td>
-              <td style="text-align: left; padding-left: 5px">
-                TÉCNICO EM INFORMÁTICA PARA INTERNET
-              </td>
-              <td>1200h</td>
-              <td>18 X R$ 300,00</td>
-              <td>( ) 70% ( ) 50% ( ) 30%</td>
-            </tr>
-          </tbody>
-        </table>
-        <p class="pagesSempleTexts">
-          1. O valor acima contratado refere-se ao total das parcelas acima
-          identificadas, de acordo com o curso escolhido. As bolsas e descontos
-          ofertados ao CONTRATANTE somente serão considerandos para o PAGAMENTO
-          NA DATA DE PAGAMENTO ACORDADA. O pagamento APÓS A DATA DE VENCIMENTO,
-          deverá ser feita considerando a PARCELA INTEGRAL ORIGINAL OU COMPLETA
-          do curso contratado.
-        </p>
-        <p class="pagesSempleTexts">
-          2. As parcelas do curso contratado e suas alterações poderão ser pagos
-          em MENOS parcelas mensais e majoradas, considerando o valor integral
-          do curso, ou seja, as parcelas não se referem aos meses do curso em
-          estudos, cabendo outras formas de negociação relacionadas ao valor
-          integral do curso.
-        </p>
-        <p class="pagesSempleTexts">
-          3. As parcelas serão pagas por meio de boleto bancário, cartão de
-          crédito (incluem taxas de administração) ou PIX e terão vencimento no
-          dia 07 (sete) de cada mês da semestralidade.
-        </p>
-        <p class="pagesSempleTexts">
-          4. O CONTRATANTE terá acesso ao boleto através do endereço eletrônico
-          da plataforma de estudos, sendo de sua responsabilidade a emissão do
-          mesmo para pagamento mensal. Havendo qualquer problema na emissão, o
-          CONTRATANTE deverá comunicar a secretaria da CONTRATADA, no mínimo 2
-          (dois) dias antes do vencimento, para a solução do problema.
-        </p>
-        <p class="pagesSempleTexts">
-          5. Ocorrendo o pagamento via boleto bancário, este deverá ser pago no
-          mesmo valor calculado pelo sistema acadêmico da CONTRATADA. Havendo
-          diferença no valor cobrado pelo banco ou seu correspondente, a
-          instituição poderá cobrar o saldo remanescente. A CONTRATADA não se
-          responsabiliza por valores cobrados pelos bancos e seus
-          correspondentes e não repassados para a instituição.
-        </p>
-        <p class="pagesSempleTexts">
-          6. Caso o pagamento seja feito em cheque, este será recebido em
-          caráter pro solvendo, podendo a CONTRATADA recusar o recebimento após
-          a análise do mesmo.
-        </p>
-        <p class="pagesSempleTexts">
-          7. O CONTRATANTE poderá requerer débito automático, nos bancos
-          conveniados, mediante formulário próprio de autorização, requerido na
-          secretaria da CONTRATADA, respeitando-se os prazos previstos pelas
-          agências bancárias para este tipo de serviço.
-        </p>
-        <p class="pagesSempleTexts">
-          8. Ocorrendo ajuste de matrícula, o acréscimo ou desconto será cobrado
-          ou descontado na próxima parcela vincenda.
-        </p>
-        <p class="pagesSempleTexts">
-          9. Ocorrendo trancamento de disciplina, haverá redução no valor da
-          mensalidade somente das parcelas vencíveis, não havendo ressarcimento
-          ou redução em parcelas vencidas.
-        </p>
-        <p class="pagesSempleTexts">
-          10. Ocorrendo inclusão de disciplinas, o valor referente a esta
-          inclusão, será cobrado de forma retroativa desde a primeira parcela da
-          semestralidade e terá vencimento na próxima parcela vincenda. Haverá
-          ainda, alteração no valor das próximas parcelas da semestralidade.
-        </p>
-        <p class="pagesSempleTexts">
-          11. O não comparecimento do aluno aos atos escolares ora contratados,
-          não o exime do pagamento, tendo em vista a disponibilidade do serviço
-          colocado ao contratante.
-        </p>
-        <p class="pagesSempleTexts">
-          12. Os valores da contraprestação das demais atividades, inclusive as
-          extracurriculares, serão fixados a cada serviço, pela CONTRATADA,
-          sendo que sua contratação não terá caráter obrigatório.
-        </p>
-        <p class="pagesSempleTexts">
-          13. Não estão inclusos neste contrato os serviços especiais de
-          recuperação, reforço, dependência, transporte escolar, material
-          escolar, custeio de viagens educacionais e outros não relacionados à
-          disciplina cursada ou quando não contemplados no Projeto Pedagógico do
-          Curso.
-        </p>
-        <p class="pagesSempleTexts">
-          14. Os documentos solicitados pelo CONTRATANTE durante o semestre
-          letivo são de sua inteira responsabilidade, sendo que a CONTRATADA
-          cobrará os custos de sua confecção, em conformidade com a portaria em
-          vigor.
-        </p>
-        <p class="pagesSempleTexts">
-          15. Os descontos concedidos pela CONTRATADA, por meio de suas
-          mantidas, deverão seguir os critérios previstos em Resolução para este
-          fim.
-        </p>
-        <p class="pagesSempleTexts">
-          16. Cessando o direito ao desconto citado no item anterior, o
-          beneficiário deverá avisar imediatamente a secretaria. O recebimento
-          do desconto em desacordo com a orientação incorrerá na devolução dos
-          valores pelo CONTRATANTE à CONTRATADA.
-        </p>
-        <p class="pagesSempleTexts">
-          17. A CONTRATADA poderá negociar com instituições financeiras e afins,
-          inclusive para que recebam diretamente do CONTRATANTE, o valor total
-          ou parcial do crédito relativo ao valor ora contratado, respeitados,
-          até a data de seus vencimentos, os valores nominais das parcelas e,
-          após o vencimento, valer-se dos mecanismos próprios para cobrança.
-        </p>
-        <p class="pagesSempleTexts">
-          18. Se por qualquer motivo o CONTRATANTE possuir valor a ser
-          restituído, este autoriza a CONTRATADA a efetuar compensação de
-          valores nas parcelas vencidas, vincendas e outros débitos.
-        </p>
-        <p class="pagesSempleTexts">
-          19. O CONTRATANTE autoriza a CONTRATADA a prestar informações
-          financeiras e do objeto da prestação de serviço a seus genitores ou
-          responsáveis legais.
-        </p>
-      </div>
+        margin-top: 2px;
+        line-height: 9px;
+      "
+    >
+      <tbody>
+        <tr>
+          <td><b>OPÇÃO</b></td>
+          <td><b>CURSOS</b></td>
+          <td>
+            <b>CARGA HORÁRIA <br />DO CURSO</b>
+          </td>
+          <td>
+            <b>QUANTIDADE E VALOR DA <br />PARCELA MENSAL / 2023</b>
+          </td>
+          <td>
+            <b>BOLSA DE ESTUDOS (DESCONTOS) <br />CONCEDIDO</b>
+          </td>
+        </tr>
+        <tr>
+          <td>001</td>
+          <td style="text-align: left; padding-left: 5px">
+            TÉCNICO EM SEGURANÇA DO TRABALHO
+          </td>
+          <td>1200h</td>
+          <td>18 X R$ 350,00</td>
+          <td>( ) 70% ( ) 50% ( ) 30%</td>
+        </tr>
+        <tr>
+          <td>002</td>
+          <td style="text-align: left; padding-left: 5px">
+            TÉCNICO EM ELETROTÉCNICA
+          </td>
+          <td>1200h</td>
+          <td>18 X R$ 350,00</td>
+          <td>( ) 70% ( ) 50% ( ) 30%</td>
+        </tr>
+        <tr>
+          <td>003</td>
+          <td style="text-align: left; padding-left: 5px">
+            TÉCNICO EM ENFERMAGEM
+          </td>
+          <td>1800h</td>
+          <td>21 X R$ 400,00</td>
+          <td>( ) 70% ( ) 50% ( ) 30%</td>
+        </tr>
+        <tr>
+          <td>004</td>
+          <td style="text-align: left; padding-left: 5px">
+            TÉCNICO EM MEIO AMBIENTE
+          </td>
+          <td>1200h</td>
+          <td>18 X R$ 350,00</td>
+          <td>( ) 70% ( ) 50% ( ) 30%</td>
+        </tr>
+        <tr>
+          <td>005</td>
+          <td style="text-align: left; padding-left: 5px">
+            TÉCNICO EM INFORMÁTICA PARA INTERNET
+          </td>
+          <td>1200h</td>
+          <td>18 X R$ 300,00</td>
+          <td>( ) 70% ( ) 50% ( ) 30%</td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="pagesSempleTexts">
+      1. O valor acima contratado refere-se ao total das parcelas acima
+      identificadas, de acordo com o curso escolhido. As bolsas e descontos
+      ofertados ao CONTRATANTE somente serão considerandos para o PAGAMENTO NA
+      DATA DE PAGAMENTO ACORDADA. O pagamento APÓS A DATA DE VENCIMENTO, deverá
+      ser feita considerando a PARCELA INTEGRAL ORIGINAL OU COMPLETA do curso
+      contratado.
+    </p>
+    <p class="pagesSempleTexts">
+      2. As parcelas do curso contratado e suas alterações poderão ser pagos em
+      MENOS parcelas mensais e majoradas, considerando o valor integral do
+      curso, ou seja, as parcelas não se referem aos meses do curso em estudos,
+      cabendo outras formas de negociação relacionadas ao valor integral do
+      curso.
+    </p>
+    <p class="pagesSempleTexts">
+      3. As parcelas serão pagas por meio de boleto bancário, cartão de crédito
+      (incluem taxas de administração) ou PIX e terão vencimento no dia 07
+      (sete) de cada mês da semestralidade.
+    </p>
+    <p class="pagesSempleTexts">
+      4. O CONTRATANTE terá acesso ao boleto através do endereço eletrônico da
+      plataforma de estudos, sendo de sua responsabilidade a emissão do mesmo
+      para pagamento mensal. Havendo qualquer problema na emissão, o CONTRATANTE
+      deverá comunicar a secretaria da CONTRATADA, no mínimo 2 (dois) dias antes
+      do vencimento, para a solução do problema.
+    </p>
+    <p class="pagesSempleTexts">
+      5. Ocorrendo o pagamento via boleto bancário, este deverá ser pago no
+      mesmo valor calculado pelo sistema acadêmico da CONTRATADA. Havendo
+      diferença no valor cobrado pelo banco ou seu correspondente, a instituição
+      poderá cobrar o saldo remanescente. A CONTRATADA não se responsabiliza por
+      valores cobrados pelos bancos e seus correspondentes e não repassados para
+      a instituição.
+    </p>
+    <p class="pagesSempleTexts">
+      6. Caso o pagamento seja feito em cheque, este será recebido em caráter
+      pro solvendo, podendo a CONTRATADA recusar o recebimento após a análise do
+      mesmo.
+    </p>
+    <p class="pagesSempleTexts">
+      7. O CONTRATANTE poderá requerer débito automático, nos bancos
+      conveniados, mediante formulário próprio de autorização, requerido na
+      secretaria da CONTRATADA, respeitando-se os prazos previstos pelas
+      agências bancárias para este tipo de serviço.
+    </p>
+    <p class="pagesSempleTexts">
+      8. Ocorrendo ajuste de matrícula, o acréscimo ou desconto será cobrado ou
+      descontado na próxima parcela vincenda.
+    </p>
+  </div>
+</div>
+<!-- Page two  -->
+<div class="pages">
+  <div class="pagesContent">
+    <p class="pagesSempleTexts" style="margin-top: 7px">
+      9. Ocorrendo trancamento de disciplina, haverá redução no valor da
+      mensalidade somente das parcelas vencíveis, não havendo ressarcimento ou
+      redução em parcelas vencidas.
+    </p>
+    <p class="pagesSempleTexts">
+      10. Ocorrendo inclusão de disciplinas, o valor referente a esta inclusão,
+      será cobrado de forma retroativa desde a primeira parcela da
+      semestralidade e terá vencimento na próxima parcela vincenda. Haverá
+      ainda, alteração no valor das próximas parcelas da semestralidade.
+    </p>
+    <p class="pagesSempleTexts">
+      11. O não comparecimento do aluno aos atos escolares ora contratados, não
+      o exime do pagamento, tendo em vista a disponibilidade do serviço colocado
+      ao contratante.
+    </p>
+    <p class="pagesSempleTexts">
+      12. Os valores da contraprestação das demais atividades, inclusive as
+      extracurriculares, serão fixados a cada serviço, pela CONTRATADA, sendo
+      que sua contratação não terá caráter obrigatório.
+    </p>
+    <p class="pagesSempleTexts">
+      13. Não estão inclusos neste contrato os serviços especiais de
+      recuperação, reforço, dependência, transporte escolar, material escolar,
+      custeio de viagens educacionais e outros não relacionados à disciplina
+      cursada ou quando não contemplados no Projeto Pedagógico do Curso.
+    </p>
+    <p class="pagesSempleTexts">
+      14. Os documentos solicitados pelo CONTRATANTE durante o semestre letivo
+      são de sua inteira responsabilidade, sendo que a CONTRATADA cobrará os
+      custos de sua confecção, em conformidade com a portaria em vigor.
+    </p>
+    <p class="pagesSempleTexts">
+      15. Os descontos concedidos pela CONTRATADA, por meio de suas mantidas,
+      deverão seguir os critérios previstos em Resolução para este fim.
+    </p>
+    <p class="pagesSempleTexts">
+      16. Cessando o direito ao desconto citado no item anterior, o beneficiário
+      deverá avisar imediatamente a secretaria. O recebimento do desconto em
+      desacordo com a orientação incorrerá na devolução dos valores pelo
+      CONTRATANTE à CONTRATADA.
+    </p>
+    <p class="pagesSempleTexts">
+      17. A CONTRATADA poderá negociar com instituições financeiras e afins,
+      inclusive para que recebam diretamente do CONTRATANTE, o valor total ou
+      parcial do crédito relativo ao valor ora contratado, respeitados, até a
+      data de seus vencimentos, os valores nominais das parcelas e, após o
+      vencimento, valer-se dos mecanismos próprios para cobrança.
+    </p>
+    <p class="pagesSempleTexts">
+      18. Se por qualquer motivo o CONTRATANTE possuir valor a ser restituído,
+      este autoriza a CONTRATADA a efetuar compensação de valores nas parcelas
+      vencidas, vincendas e outros débitos.
+    </p>
+    <p class="pagesSempleTexts">
+      19. O CONTRATANTE autoriza a CONTRATADA a prestar informações financeiras
+      e do objeto da prestação de serviço a seus genitores ou responsáveis
+      legais.
+    </p>
+    <p class="pagesSempleTexts">
+      <b>CLÁUSULA QUARTA – DAS OBRIGAÇÕES DA CONTRATADA</b>
+    </p>
+    <p class="pagesSempleTexts">
+      1. A Contratada se obriga a ministrar ensino por meio de aulas e demais
+      atividades escolares, devendo o plano de estudos, programas, currículo e
+      calendário estarem em conformidade com o disposto na legislação em vigor e
+      de acordo com o Projeto Pedagógico do Curso.
+    </p>
+    <p class="pagesSempleTexts">
+      2. É de inteira responsabilidade da CONTRATADA o planejamento e
+      apresentação dos serviços de ensino, no que se refere à marcação de datas
+      para provas de aproveitamento, fixação de carga horária, designação de
+      professores, orientação didático-pedagógica e educacional, além de outras
+      providências que as atividades docentes exigirem, obedecendo ao seu
+      exclusivo critério, sem ingerência do CONTRATANTE.
+    </p>
+    <p class="pagesSempleTexts">
+      <b> CLÁUSULA QUINTA– DAS OBRIGAÇÕES DO CONTRATANTE</b>
+    </p>
+    <p class="pagesSempleTexts">
+      1. O CONTRATANTE submete-se ao Regimento do CEPED e às demais obrigações
+      constantes na legislação aplicável à área de ensino e, ainda, às emanadas
+      de resoluções da Contratada, desde que regulem supletivamente a matéria,
+      inclusive o Plano Escolar previsto e o Projeto Pedagógico adotado pela
+      Contratada.
+    </p>
+    <p class="pagesSempleTexts">
+      2. Os pais ou seu responsável legal, respondem solidariamente pelo
+      presente contrato, independente de separação e guarda do filho, quando
+      menores.
+    </p>
+    <p class="pagesSempleTexts">
+      3. Efetuar o pagamento das parcelas da semestralidade nos prazos
+      estipulados e das taxas fixadas para outros serviços eventualmente
+      requeridos.
+    </p>
+    <p class="pagesSempleTexts">
+      4. O CONTRATANTE se compromete a manter seu cadastro atualizado e/ou
+      comunicar, por escrito, qualquer mudança de endereço, e-mail e telefones
+      de contato, sob pena de serem consideradas válidas as correspondências
+      enviadas aos endereços e e-mails constantes do presente contrato,
+      inclusive para efeitos de cobrança e citação judicial.
+    </p>
+    <p class="pagesSempleTexts">
+      5. O CONTRATANTE concorda, expressamente, que a CONTRATADA poderá enviar
+      suas correspondências, comunicações e notificações por meio eletrônico, ao
+      endereço e e-mail informado no cadastro do aluno.
+    </p>
+    <p class="pagesSempleTexts">
+      6. Comparecer às aulas, conforme o Calendário Escolar e Plano de Ensino,
+      no mínimo 75% desta, sob pena de reprovação por faltas. Acompanhar as
+      aulas, atender às orientações dos professores, realizar as avaliações e
+      trabalhos determinados por estes, respeitar a Reitoria, Coordenadores e
+      demais colaboradores da instituição.
+    </p>
+    <p class="pagesSempleTexts">
+      7. Respeitar o patrimônio moral, físico e de produção intelectual da
+      CONTRATADA e de seus prepostos, sendo responsável pelos prejuízos a que
+      der causa.
+    </p>
+    <p class="pagesSempleTexts">
+      8. O CONTRATANTE compromete-se a ressarcir quaisquer prejuízos que causar
+      às dependências, materiais e equipamentos da CONTRATADA, por dolo, culpa e
+      descumprimento de normas internas.
+    </p>
+    <p class="pagesSempleTexts">
+      9. Recaindo a responsabilidade à CONTRATADA, obriga-se também o
+      CONTRATANTE ao ressarcimento pelos danos causados, conforme previsto no
+      artigo 932 do Código Civil até o limite do que esta tiver reembolsado,
+      inclusive as despesas assessórias.
+    </p>
+    <p class="pagesSempleTexts">
+      10. Obriga-se, especialmente, o CONTRATANTE, às disposições contidas no
+      Regulamento da Biblioteca da CONTRATADA.
+    </p>
+    <p class="pagesSempleTexts">
+      11. No caso de evento danoso ocasionado pelo CONTRATANTE a terceiros e,
+      arcando a CONTRATADA com o pagamento dos respectivos prejuízos, esta
+      exercerá direito de regresso contra o CONTRATANTE, visando reaver os
+      valores desembolsados.
+    </p>
+    <p class="pagesSempleTexts">
+      12. O CONTRATANTE aceita e concorda com as regras contidas no Projeto
+      Pedagógico do Curso, no Estatuto e no Regimento Geral do CEPED, nos
+      regulamentos, manuais, resoluções e portarias emitidas pela CONTRATADA,
+      principalmente nas políticas de restrição a bebidas alcoólicas e
+      tabagismo, bem como, também, nas normas emanadas dos órgãos competentes
+      autorizados a disciplinar a presente matéria.
+    </p>
+    <p class="pagesSempleTexts">
+      13. É vedada a venda de produtos ou alimentos por alunos dentro do espaço
+      físico da CONTRATADA, salvo se autorizado por escrito.
+    </p>
+    <p class="pagesSempleTexts"><b>CLÁUSULA SEXTA – DA INADIMPLÊNCIA</b></p>
+    <p class="pagesSempleTexts">
+      1. O CONTRATANTE tem ciência neste ato, que em caso de atraso no pagamento
+      das parcelas ou qualquer obrigação de pagamento decorrente do presente
+      contrato, poderá a CONTRATADA:
+    </p>
+    <p class="pagesSempleTexts">
+      a) Não renovar/efetivar a matrícula do(a) aluno(a) para o semestre
+      seguinte;
+    </p>
+    <p class="pagesSempleTexts">
+      b) Inscrever o nome do CONTRATANTE ou seu responsável no Serviço de
+      Proteção ao Crédito e no SERASA, independentemente de qualquer
+      notificação;
+    </p>
+    <p class="pagesSempleTexts">
+      c) Encaminhar os valores para escritório de cobrança;
+    </p>
+    <p class="pagesSempleTexts">d) Cobrança judicial e extrajudicial;</p>
+    <p class="pagesSempleTexts">
+      2. Havendo atraso no pagamento da parcela, será acrescido no valor 2%
+      (dois por cento) de multa contratual, 1% (um por cento) ao mês de juros de
+      mora e atualização monetária, com base no INPC ou outro índice que venha
+      substituí-lo.
+    </p>
+    <p class="pagesSempleTexts">
+      3. É de responsabilidade do CONTRATANTE todas as despesas referentes à
+      cobrança, fixando desde já, os honorários em 20% (vinte por cento)
+      independente da cobrança ser administrativa ou judicial.
+    </p>
+    <p class="pagesSempleTexts">
+      4. Ocorrendo pagamento ou negociação dos débitos e havendo parcelas
+      protestadas, é de exclusiva responsabilidade do CONTRATANTE a baixa do
+      protesto, arcando com os custos do cartório.
+    </p>
+    <p class="pagesSempleTexts">
+      5. O descumprimento desta cláusula implica na perda do direito de
+      contratar outros serviços prestados pela CONTRATADA, enquanto durar o
+      inadimplemento. A eventual tolerância no cumprimento de quaisquer das
+      cláusulas deste Contrato não implica alteração contratual.
+    </p>
+    <p class="pagesSempleTexts"><b>CLÁUSULA SÉTIMA - DA RESCISÃO</b></p>
+    <p class="pagesSempleTexts">A rescisão poderá ocorrer nos casos abaixo:</p>
+  </div>
+</div>
+<!-- Page three  -->
+<div class="pages">
+  <div class="pagesContent">
+    <p class="pagesSempleTexts" style="margin-top: 7px">I - Pela CONTRATADA:</p>
+    <p class="pagesSempleTexts">
+      a) Nas hipóteses insertas no Regimento Geral do CEPED.
+    </p>
+    <p class="pagesSempleTexts">
+      b) Quando não preencher o número mínimo de matrículas para manter o
+      equilíbrio econômico financeiro;
+    </p>
+    <p class="pagesSempleTexts">c) Por expulsão.</p>
+    <p class="pagesSempleTexts">
+      d) Pelo não pagamento da 1ª parcela da semestralidade. II - Pelo
+      CONTRATANTE:
+    </p>
+    <p class="pagesSempleTexts">
+      a) Por cancelamento oficial e expresso da matrícula: o CONTRATANTE, quando
+      o aluno ingressante, exceto transferência interna, poderá requerer o
+      cancelamento da matrícula até o dia anterior ao início das aulas, com
+      direito à devolução de 70% (setenta por cento) do montante pago à
+      CONTRATADA. O valor correspondente a 30% (trinta por cento) das parcelas
+      será retido a título de despesas administrativas.
+    </p>
+    <p class="pagesSempleTexts">
+      b) Por desistência formal do curso: neste caso, assume o CONTRATANTE a
+      obrigação do pagamento das parcelas até a data do protocolo do pedido,
+      além de outros débitos porventura existentes, devidamente atualizados.
+    </p>
+    <p class="pagesSempleTexts">
+      c) Por abandono do curso: pela rescisão por abandono, sem desistência
+      formal da matrícula, assume o CONTRATANTE a obrigação do pagamento das
+      parcelas vencidas até o mês que tenha frequentado/participado das
+      atividades letivas, bem como a título de cláusula penal compensatória,
+      pela inexecução total da obrigação ora assumida, o compromisso de pagar o
+      valor correspondente a 10% (dez por cento) do valor das parcelas da fase
+      matriculada, cujo vencimento ocorreu após o abandono, além de outros
+      débitos porventura existentes, tudo devidamente atualizados.
+    </p>
+    <p class="pagesSempleTexts">
+      <b>CLÁUSULA OITAVA – DO EQUILÍBRIO CONTRATUAL</b>
+    </p>
+    <p class="pagesSempleTexts">
+      Ajustam as partes, nos termos dos arts. 317, 478 e 479 do Código Civil, e
+      demais dispositivos legais aplicáveis à espécie, que na hipótese da
+      ocorrência, por motivos imprevisíveis, de desproporção manifesta entre o
+      custo do serviço estipulado no momento da contratação da prestação devida
+      e aquele do momento de sua execução, será realizado o reequilíbrio
+      econômico-financeiro da avença de sorte a que se adeque o custo do serviço
+      ao seu valor real, majorando-o”.
+    </p>
+    <p class="pagesSempleTexts">
+      <b>CLÁUSULA NONA – DO LOCAL E PERÍODOS DE AULA</b>
+    </p>
+    <p class="pagesSempleTexts">
+      As aulas serão ministradas nas salas de aula ou locais em que a CONTRATADA
+      indicar, podendo ser nos períodos MATUTINO, VESPERTINO ou NOTURNO, de
+      acordo com a opção realizada pelo aluno no ato da matrícula. Tendo em
+      vista a natureza do conteúdo e das técnicas pedagógicas, se necessário a
+      CONTRATADA poderá alterar o local das aulas, desde que comunique aos
+      alunos com antecedência.
+    </p>
+    <p class="pagesSempleTexts">
+      <b>CLAUSULA DÉCIMA - DO DIPLOMA DE CONCLUSÃO DE CURSO</b>
+    </p>
+    <p class="pagesSempleTexts">
+      O Diploma de Curso Técnico será conferido pela
+      <b
+        >ESCOLA DE ENSINO FUNDAMENTAL, MEDIO E TECNICO DIMENSAO LTDA (CENTRO DE
+        EDUCACAO PROFISSIONAL DIMENSAO - CEPED)</b
+      >, ao CONTRATANTE formado no ensino médio, que obtiver aproveitamento
+      pedagógico segundo os critérios de avaliação estabelecidos no projeto
+      pedagógico do curso (PPC) e em conformidade com o Contrato ora firmados
+      entre as partes.
+    </p>
+    <p class="pagesSempleTexts">
+      <b> CLÁUSULA DÉCIMA PRIMEIRA - DOS OBJETOS</b>
+    </p>
+    <p class="pagesSempleTexts">
+      A Contratada não se responsabiliza pela guarda e consequente indenização,
+      decorrente do extravio ou danos causados a quaisquer objetos levados ao
+      estabelecimento educacional, inclusive papel moeda, documentos, aparelhos
+      eletrônicos ou celulares pertencentes ou sob posse do Contratante, do
+      Discente ou de seus prepostos ou acompanhantes.
+    </p>
+    <p class="pagesSempleTexts">
+      <b>CLÁUSULA DÉCIMA SEGUNDA - DO ESTACIONAMENTO</b>
+    </p>
+    <p class="pagesSempleTexts">
+      Com a assinatura do presente instrumento fica o CONTRATANTE ciente de que
+      a CONTRATADA não presta quaisquer tipos de serviços em relação ao
+      estacionamento, vigilância ou guarda de veículos automotores de qualquer
+      natureza ou bicicletas e similares não assumindo, portanto, para si, a
+      responsabilidade de indenizações por danos, furtos, roubos, incêndios,
+      atropelamentos, colisões, etc., que venham a ocorrer nos pátios internos,
+      externos, ou circunvizinhos de seus prédios, cuja responsabilidade será
+      exclusivamente de seu condutor e ou proprietário.
+    </p>
+    <p class="pagesSempleTexts">
+      <b>CLÁUSULA DÉCIMA TERCEIRA – DO DIREITO A IMAGEM</b>
+    </p>
+    <p class="pagesSempleTexts">
+      1. A Contratada, livre de quaisquer ônus para com o CONTRATANTE, poderá
+      utilizar-se da sua imagem para fins exclusivos de divulgação do
+      <b>CENTRO DE EDUCACAO PROFISSIONAL DIMENSAO - CEPED </b> e suas atividades
+      podendo, para tanto, reproduzi-la ou divulgá-la junto a Internet, jornais,
+      e todos os demais meios de comunicação, público ou privado.
+    </p>
+    <p class="pagesSempleTexts">
+      2. Em nenhuma hipótese poderá a imagem ser utilizada de maneira contrária
+      à moral ou aos bons costumes ou à ordem pública.
+    </p>
+    <p class="pagesSempleTexts">
+      <b>CLÁUSULA DÉCIMA QUARTA – DOS DANOS</b>
+    </p>
+    <p class="pagesSempleTexts">
+      1. O aluno que causar danos ao estabelecimento ou a terceiros, será
+      notificado na pessoa do CONTRATANTE para reparar os danos ocorridos, além
+      de sujeitar-se às disposições regimentais.
+    </p>
+    <p class="pagesSempleTexts">
+      2. Na ocorrência de evento danoso praticado pelo aluno e recaindo a
+      responsabilização pelo ressarcimento a Contratada, esta poderá exercer o
+      direito de regresso contra o Contratante até o limite do que tiver
+      reembolsado, acrescido de perdas e danos e demais gastos que tenham sido
+      necessários.
+    </p>
+    <p class="pagesSempleTexts"><b>CLÁUSULA DÉCIMA QUINTA – GERAIS</b></p>
+    <p class="pagesSempleTexts">
+      Para dirimir questões oriundas deste contrato, fica eleito o Foro da
+      Comarca de Caetité - BA. E, por estarem justos e contratados, assinam o
+      presente instrumento em duas vias de igual teor e forma, na presença das
+      testemunhas abaixo, para que se produzam todos os efeitos legais.
+    </p>
+    <p class="pagesSempleTexts" style="margin-top: 10px">
+      Caetité, ____ / ____ /20____.
+    </p>
+    <div class="pagesSignatures">
+      <p>
+        ________________________________________ <br /><span class="returnBd"
+          >|strNomeResponsavel|
+        </span>
+        CONTRATANTE
+      </p>
+      <p>________________________________________ <br />CONTRATADA - CEPED</p>
     </div>
-    <!-- Page two  -->
-    <div class="pages">
-      <div class="pagesContent">
-        <p class="pagesSempleTexts" style="margin-top: 7px">
-          <b>CLÁUSULA QUARTA – DAS OBRIGAÇÕES DA CONTRATADA</b>
-        </p>
-        <p class="pagesSempleTexts">
-          1. A Contratada se obriga a ministrar ensino por meio de aulas e
-          demais atividades escolares, devendo o plano de estudos, programas,
-          currículo e calendário estarem em conformidade com o disposto na
-          legislação em vigor e de acordo com o Projeto Pedagógico do Curso.
-        </p>
-        <p class="pagesSempleTexts">
-          2. É de inteira responsabilidade da CONTRATADA o planejamento e
-          apresentação dos serviços de ensino, no que se refere à marcação de
-          datas para provas de aproveitamento, fixação de carga horária,
-          designação de professores, orientação didático-pedagógica e
-          educacional, além de outras providências que as atividades docentes
-          exigirem, obedecendo ao seu exclusivo critério, sem ingerência do
-          CONTRATANTE.
-        </p>
-        <p class="pagesSempleTexts">
-          <b> CLÁUSULA QUINTA– DAS OBRIGAÇÕES DO CONTRATANTE</b>
-        </p>
-        <p class="pagesSempleTexts">
-          1. O CONTRATANTE submete-se ao Regimento do CEPED e às demais
-          obrigações constantes na legislação aplicável à área de ensino e,
-          ainda, às emanadas de resoluções da Contratada, desde que regulem
-          supletivamente a matéria, inclusive o Plano Escolar previsto e o
-          Projeto Pedagógico adotado pela Contratada.
-        </p>
-        <p class="pagesSempleTexts">
-          2. Os pais ou seu responsável legal, respondem solidariamente pelo
-          presente contrato, independente de separação e guarda do filho, quando
-          menores.
-        </p>
-        <p class="pagesSempleTexts">
-          3. Efetuar o pagamento das parcelas da semestralidade nos prazos
-          estipulados e das taxas fixadas para outros serviços eventualmente
-          requeridos.
-        </p>
-        <p class="pagesSempleTexts">
-          4. O CONTRATANTE se compromete a manter seu cadastro atualizado e/ou
-          comunicar, por escrito, qualquer mudança de endereço, e-mail e
-          telefones de contato, sob pena de serem consideradas válidas as
-          correspondências enviadas aos endereços e e-mails constantes do
-          presente contrato, inclusive para efeitos de cobrança e citação
-          judicial.
-        </p>
-        <p class="pagesSempleTexts">
-          5. O CONTRATANTE concorda, expressamente, que a CONTRATADA poderá
-          enviar suas correspondências, comunicações e notificações por meio
-          eletrônico, ao endereço e e-mail informado no cadastro do aluno.
-        </p>
-        <p class="pagesSempleTexts">
-          6. Comparecer às aulas, conforme o Calendário Escolar e Plano de
-          Ensino, no mínimo 75% desta, sob pena de reprovação por faltas.
-          Acompanhar as aulas, atender às orientações dos professores, realizar
-          as avaliações e trabalhos determinados por estes, respeitar a
-          Reitoria, Coordenadores e demais colaboradores da instituição.
-        </p>
-        <p class="pagesSempleTexts">
-          7. Respeitar o patrimônio moral, físico e de produção intelectual da
-          CONTRATADA e de seus prepostos, sendo responsável pelos prejuízos a
-          que der causa.
-        </p>
-        <p class="pagesSempleTexts">
-          8. O CONTRATANTE compromete-se a ressarcir quaisquer prejuízos que
-          causar às dependências, materiais e equipamentos da CONTRATADA, por
-          dolo, culpa e descumprimento de normas internas.
-        </p>
-        <p class="pagesSempleTexts">
-          9. Recaindo a responsabilidade à CONTRATADA, obriga-se também o
-          CONTRATANTE ao ressarcimento pelos danos causados, conforme previsto
-          no artigo 932 do Código Civil até o limite do que esta tiver
-          reembolsado, inclusive as despesas assessórias.
-        </p>
-        <p class="pagesSempleTexts">
-          10. Obriga-se, especialmente, o CONTRATANTE, às disposições contidas
-          no Regulamento da Biblioteca da CONTRATADA.
-        </p>
-        <p class="pagesSempleTexts">
-          11. No caso de evento danoso ocasionado pelo CONTRATANTE a terceiros
-          e, arcando a CONTRATADA com o pagamento dos respectivos prejuízos,
-          esta exercerá direito de regresso contra o CONTRATANTE, visando reaver
-          os valores desembolsados.
-        </p>
-        <p class="pagesSempleTexts">
-          12. O CONTRATANTE aceita e concorda com as regras contidas no Projeto
-          Pedagógico do Curso, no Estatuto e no Regimento Geral do CEPED, nos
-          regulamentos, manuais, resoluções e portarias emitidas pela
-          CONTRATADA, principalmente nas políticas de restrição a bebidas
-          alcoólicas e tabagismo, bem como, também, nas normas emanadas dos
-          órgãos competentes autorizados a disciplinar a presente matéria.
-        </p>
-        <p class="pagesSempleTexts">
-          13. É vedada a venda de produtos ou alimentos por alunos dentro do
-          espaço físico da CONTRATADA, salvo se autorizado por escrito.
-        </p>
-        <p class="pagesSempleTexts"><b>CLÁUSULA SEXTA – DA INADIMPLÊNCIA</b></p>
-        <p class="pagesSempleTexts">
-          1. O CONTRATANTE tem ciência neste ato, que em caso de atraso no
-          pagamento das parcelas ou qualquer obrigação de pagamento decorrente
-          do presente contrato, poderá a CONTRATADA:
-        </p>
-        <p class="pagesSempleTexts">
-          a) Não renovar/efetivar a matrícula do(a) aluno(a) para o semestre
-          seguinte;
-        </p>
-        <p class="pagesSempleTexts">
-          b) Inscrever o nome do CONTRATANTE ou seu responsável no Serviço de
-          Proteção ao Crédito e no SERASA, independentemente de qualquer
-          notificação;
-        </p>
-        <p class="pagesSempleTexts">
-          c) Encaminhar os valores para escritório de cobrança;
-        </p>
-        <p class="pagesSempleTexts">d) Cobrança judicial e extrajudicial;</p>
-        <p class="pagesSempleTexts">
-          2. Havendo atraso no pagamento da parcela, será acrescido no valor 2%
-          (dois por cento) de multa contratual, 1% (um por cento) ao mês de
-          juros de mora e atualização monetária, com base no INPC ou outro
-          índice que venha substituí-lo.
-        </p>
-        <p class="pagesSempleTexts">
-          3. É de responsabilidade do CONTRATANTE todas as despesas referentes à
-          cobrança, fixando desde já, os honorários em 20% (vinte por cento)
-          independente da cobrança ser administrativa ou judicial.
-        </p>
-        <p class="pagesSempleTexts">
-          4. Ocorrendo pagamento ou negociação dos débitos e havendo parcelas
-          protestadas, é de exclusiva responsabilidade do CONTRATANTE a baixa do
-          protesto, arcando com os custos do cartório.
-        </p>
-        <p class="pagesSempleTexts">
-          5. O descumprimento desta cláusula implica na perda do direito de
-          contratar outros serviços prestados pela CONTRATADA, enquanto durar o
-          inadimplemento. A eventual tolerância no cumprimento de quaisquer das
-          cláusulas deste Contrato não implica alteração contratual.
-        </p>
-        <p class="pagesSempleTexts"><b>CLÁUSULA SÉTIMA - DA RESCISÃO</b></p>
-        <p class="pagesSempleTexts">
-          A rescisão poderá ocorrer nos casos abaixo:
-        </p>
-        <p class="pagesSempleTexts">I - Pela CONTRATADA:</p>
-        <p class="pagesSempleTexts">
-          a) Nas hipóteses insertas no Regimento Geral do CEPED.
-        </p>
-        <p class="pagesSempleTexts">
-          b) Quando não preencher o número mínimo de matrículas para manter o
-          equilíbrio econômico financeiro;
-        </p>
-        <p class="pagesSempleTexts">c) Por expulsão.</p>
-        <p class="pagesSempleTexts">
-          d) Pelo não pagamento da 1ª parcela da semestralidade. II - Pelo
-          CONTRATANTE:
-        </p>
-        <p class="pagesSempleTexts">
-          a) Por cancelamento oficial e expresso da matrícula: o CONTRATANTE,
-          quando o aluno ingressante, exceto transferência interna, poderá
-          requerer o cancelamento da matrícula até o dia anterior ao início das
-          aulas, com direito à devolução de 70% (setenta por cento) do montante
-          pago à CONTRATADA. O valor correspondente a 30% (trinta por cento) das
-          parcelas será retido a título de despesas administrativas.
-        </p>
-        <p class="pagesSempleTexts">
-          b) Por desistência formal do curso: neste caso, assume o CONTRATANTE a
-          obrigação do pagamento das parcelas até a data do protocolo do pedido,
-          além de outros débitos porventura existentes, devidamente atualizados.
-        </p>
-        <p class="pagesSempleTexts">
-          c) Por abandono do curso: pela rescisão por abandono, sem desistência
-          formal da matrícula, assume o CONTRATANTE a obrigação do pagamento das
-          parcelas vencidas até o mês que tenha frequentado/participado das
-          atividades letivas, bem como a título de cláusula penal compensatória,
-          pela inexecução total da obrigação ora assumida, o compromisso de
-          pagar o valor correspondente a 10% (dez por cento) do valor das
-          parcelas da fase matriculada, cujo vencimento ocorreu após o abandono,
-          além de outros débitos porventura existentes, tudo devidamente
-          atualizados.
-        </p>
-        <p class="pagesSempleTexts">
-          <b>CLÁUSULA OITAVA – DO EQUILÍBRIO CONTRATUAL</b>
-        </p>
-        <p class="pagesSempleTexts">
-          Ajustam as partes, nos termos dos arts. 317, 478 e 479 do Código
-          Civil, e demais dispositivos legais aplicáveis à espécie, que na
-          hipótese da ocorrência, por motivos imprevisíveis, de desproporção
-          manifesta entre o custo do serviço estipulado no momento da
-          contratação da prestação devida e aquele do momento de sua execução,
-          será realizado o reequilíbrio econômico-financeiro da avença de sorte
-          a que se adeque o custo do serviço ao seu valor real, majorando-o”.
-        </p>
-        <p class="pagesSempleTexts">
-          <b>CLÁUSULA NONA – DO LOCAL E PERÍODOS DE AULA</b>
-        </p>
-        <p class="pagesSempleTexts">
-          As aulas serão ministradas nas salas de aula ou locais em que a
-          CONTRATADA indicar, podendo ser nos períodos MATUTINO, VESPERTINO ou
-          NOTURNO, de acordo com a opção realizada pelo aluno no ato da
-          matrícula. Tendo em vista a natureza do conteúdo e das técnicas
-          pedagógicas, se necessário a CONTRATADA poderá alterar o local das
-          aulas, desde que comunique aos alunos com antecedência.
-        </p>
-        <p class="pagesSempleTexts">
-          <b>CLAUSULA DÉCIMA - DO DIPLOMA DE CONCLUSÃO DE CURSO</b>
-        </p>
-        <p class="pagesSempleTexts">
-          O Diploma de Curso Técnico será conferido pela
-          <b
-            >ESCOLA DE ENSINO FUNDAMENTAL, MEDIO E TECNICO DIMENSAO LTDA (CENTRO
-            DE EDUCACAO PROFISSIONAL DIMENSAO - CEPED)</b
-          >, ao CONTRATANTE formado no ensino médio, que obtiver aproveitamento
-          pedagógico segundo os critérios de avaliação estabelecidos no projeto
-          pedagógico do curso (PPC) e em conformidade com o Contrato ora
-          firmados entre as partes.
-        </p>
-        <p class="pagesSempleTexts">
-          <b> CLÁUSULA DÉCIMA PRIMEIRA - DOS OBJETOS</b>
-        </p>
-        <p class="pagesSempleTexts">
-          A Contratada não se responsabiliza pela guarda e consequente
-          indenização, decorrente do extravio ou danos causados a quaisquer
-          objetos levados ao estabelecimento educacional, inclusive papel moeda,
-          documentos, aparelhos eletrônicos ou celulares pertencentes ou sob
-          posse do Contratante, do Discente ou de seus prepostos ou
-          acompanhantes.
-        </p>
-        <p class="pagesSempleTexts">
-          <b>CLÁUSULA DÉCIMA SEGUNDA - DO ESTACIONAMENTO</b>
-        </p>
-        <p class="pagesSempleTexts">
-          Com a assinatura do presente instrumento fica o CONTRATANTE ciente de
-          que a CONTRATADA não presta quaisquer tipos de serviços em relação ao
-          estacionamento, vigilância ou guarda de veículos automotores de
-          qualquer natureza ou bicicletas e similares não assumindo, portanto,
-          para si, a responsabilidade de indenizações por danos, furtos, roubos,
-          incêndios, atropelamentos, colisões, etc., que venham a ocorrer nos
-          pátios internos, externos, ou circunvizinhos de seus prédios, cuja
-          responsabilidade será exclusivamente de seu condutor e ou
-          proprietário.
-        </p>
-        <p class="pagesSempleTexts">
-          <b>CLÁUSULA DÉCIMA TERCEIRA – DO DIREITO A IMAGEM</b>
-        </p>
-        <p class="pagesSempleTexts">
-          1. A Contratada, livre de quaisquer ônus para com o CONTRATANTE,
-          poderá utilizar-se da sua imagem para fins exclusivos de divulgação do
-          <b>CENTRO DE EDUCACAO PROFISSIONAL DIMENSAO - CEPED </b> e suas
-          atividades podendo, para tanto, reproduzi-la ou divulgá-la junto a
-          Internet, jornais, e todos os demais meios de comunicação, público ou
-          privado.
-        </p>
-        <p class="pagesSempleTexts">
-          2. Em nenhuma hipótese poderá a imagem ser utilizada de maneira
-          contrária à moral ou aos bons costumes ou à ordem pública.
-        </p>
-        <p class="pagesSempleTexts">
-          <b>CLÁUSULA DÉCIMA QUARTA – DOS DANOS</b>
-        </p>
-        <p class="pagesSempleTexts">
-          1. O aluno que causar danos ao estabelecimento ou a terceiros, será
-          notificado na pessoa do CONTRATANTE para reparar os danos ocorridos,
-          além de sujeitar-se às disposições regimentais.
-        </p>
-        <p class="pagesSempleTexts">
-          2. Na ocorrência de evento danoso praticado pelo aluno e recaindo a
-          responsabilização pelo ressarcimento a Contratada, esta poderá exercer
-          o direito de regresso contra o Contratante até o limite do que tiver
-          reembolsado, acrescido de perdas e danos e demais gastos que tenham
-          sido necessários.
-        </p>
-        <p class="pagesSempleTexts"><b>CLÁUSULA DÉCIMA QUINTA – GERAIS</b></p>
-        <p class="pagesSempleTexts">
-          Para dirimir questões oriundas deste contrato, fica eleito o Foro da
-          Comarca de Caetité - BA. E, por estarem justos e contratados, assinam
-          o presente instrumento em duas vias de igual teor e forma, na presença
-          das testemunhas abaixo, para que se produzam todos os efeitos legais.
-        </p>
-        <p class="pagesSempleTexts">Caetité, ____ / ____ /20____.</p>
-        <div class="pagesSignatures">
-          <p>
-            __________________________________________ <br /><span
-              class="returnBd"
-              >|strNomeResponsavel|</span
-            >
-            <br />CONTRATANTE
-          </p>
-          <p>
-            __________________________________________ <br />CONTRATADA - CEPED
-          </p>
-        </div>
-        <div class="pagesWitnesses">
-          <p>Testemunhas:</p>
-          <span
-            ><p>CPF</p>
-            <p>CPF</p></span
-          >
-        </div>
-      </div>
+    <div class="pagesWitnesses">
+      <p>Testemunhas:</p>
+      <span
+        ><p>CPF</p>
+        <p style="padding-left: 200px">CPF</p></span
+      >
     </div>
-  </body>
-</html>
+  </div>
+</div>
